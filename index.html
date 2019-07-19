@@ -70,17 +70,17 @@
                         <div class="col-md-12 col-sm-12">
                             <p>A Linux package repository is available for Debian-based Linux versions, this includes Raspbian found on the Raspberry Pi.</p>
                             <ol>
-                                <li>To add Multiplug Debian Repository to your instance of Linux, Add the following line to /etc/apt/sources.list (Only need to do this once)</li>
+                                <li>To add MultiPlug Debian Repository to your instance of Linux, Add the following line to /etc/apt/sources.list (Only need to do this once)</li>
                                 <li>deb [trusted=yes] http://apt.multiplug.uk ./</li>
                                 <li>Run the following command:</li>
                                 <li>sudo apt update</li>
-                                <li>To install Multiplug run the following command:</li>
+                                <li>To install MultiPlug run the following command:</li>
                                 <li>sudo apt-get install multiplug</li>
-                                <li>Change directory to /usr/bin/multiplug/</li>
-                                <li>To Run MultiPlug run the following command:</li>
-                                <li>sudo mono MultiPlug.CLI.exe start</li>
+                                <li>Multiplug will boot and on system startup, to access it use a web browser and IP address of the device</li>
                             </ol>
                             <p>Note: The Mono .Net Framework needs to be installed using: sudo apt-get install mono-complete</p>
+                            <p>To stop Multiplug use the command: systemctl stop multiplug.service</p>
+                            <p>To start MultiPlug use the command: systemctl start multiplug.service</p>
                     </div>
  
                 </div>
