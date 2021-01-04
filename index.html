@@ -42,7 +42,159 @@
                     <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top affix">
                         <div class="container">
                             <div class="navbar-header">
-                                <img src="//cdn.multiplug.uk/img/mp/MultiPlug.png" class="logo-left" alt="">
+                                <img src="//cdn.multiplug.uk/img/mp/MultiPlug.png" class="logo-left" alt=""><!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="How to install MultiPlug onto Linux using our Debian Repository">
+    <meta name="keywords" content="Raspberry Pi">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="British Systems">
+    <title>MultiPlug Debian Repository</title>
+
+    <link href="//cdn.multiplug.app/css/mp/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="//cdn.multiplug.app/fonts/mp/font-awesome.min.css" type="text/css" media="screen">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="//cdn.multiplug.app/css/mp/material.min.css" rel="stylesheet">
+    <link href="//cdn.multiplug.app/css/mp/ripples.min.css" rel="stylesheet">
+    <link href="//cdn.multiplug.app/css/mp/main.css" rel="stylesheet">
+    <link href="//cdn.multiplug.app/css/mp/responsive.css" rel="stylesheet">
+    <link href="//cdn.multiplug.app/css/mp/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+            <a class="navbar-brand logo-right" href="javascript:void(0)">MultiPlug</a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="http://www.multiplug.app/">Home</a></li>
+            <li class="active"><a href="http://apt.multiplug.app">Linux Installation</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Close Menu</button>
+    </div>
+
+    <div class="content-wrap">
+        <header id="extensions-home">
+
+            <div class="container">
+                <div class="col-md-12">
+
+                    <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top affix">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <img src="//cdn.multiplug.app/img/mp/MultiPlug.png" class="logo-left" alt="">
+                                
+                            </div>
+                            <div class="navbar-right">
+                                <button class="menu-icon" id="open-button">
+                                    <i class="mdi-navigation-menu"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="other-features">
+            <div class="container contents">
+                <div class="section-header" style="margin-top: 100px;">
+                    <h1 class="section-title">Debian Linux Installation</h1>
+                    <h2 class="section-subtitle">[Option 1] Install with Updates</h2>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <p>A Linux package repository is available for Debian-based Linux versions, this includes Pi OS.</p>
+                            <ol>
+                                <li>To add MultiPlug Debian Repository to your instance of Linux, Add the following line to /etc/apt/sources.list (Only need to do this once)</li>
+                                <li>deb [trusted=yes] https://apt.multiplug.app ./</li>
+                                <li>Run the following command:</li>
+                                <li>sudo apt update</li>
+                                <li>To install MultiPlug run the following command:</li>
+                                <li>sudo apt-get install multiplug</li>
+                                <li>Multiplug will boot and on system startup, to access it use a web browser and IP address of the device</li>
+                            </ol>
+                            <p>Note: The Mono .Net Framework needs to be installed using: sudo apt-get install mono-complete</p>
+                            <p>To stop Multiplug use the command: systemctl stop multiplug</p>
+                            <p>To start MultiPlug use the command: systemctl start multiplug</p>
+                    </div>
+                </div>
+                
+                
+                <div class="section-header" style="margin-top: 100px;">
+                    <h2 class="section-subtitle">[Option 2] One Time Install</h2>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <p>Manually download the .deb file and install once.</p>
+                            <ol>
+                                <li>Check for the the latest .deb file version <a href="https://github.com/British-Systems/MultiPlug-APT" target="_blank">here.</a>-2.2.67.deb</li>
+                                <li>curl –O https://apt.multiplug.app/multiplug-2.2.68.deb>
+                                <li>sudo apt install ./multiplug-2.2.68.deb</li>
+                                <li>Multiplug will boot and on system startup, to access it use a web browser and IP address of the device</li>
+                            </ol>
+                            <p>Note: The Mono .Net Framework needs to be installed using: sudo apt-get install mono-complete</p>
+                            <p>To stop Multiplug use the command: systemctl stop multiplug</p>
+                            <p>To start MultiPlug use the command: systemctl start multiplug</p>
+                    </div>
+                </div>
+				
+            </div>
+        </section>
+        
+        <section id="testimonial" class="section">
+        </section>
+
+        <section id="footer">
+            <div class="container">
+            </div>
+            <!-- Go to Top Link -->
+            <a href="#home" class="btn btn-primary back-to-top">
+                <i class="mdi-hardware-keyboard-arrow-up"></i>
+            </a>
+        </section>
+
+        <section id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright-text">
+                            © British Systems 2021 All right reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="//cdn.multiplug.app/js/mp/jquery-2.1.4.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/bootstrap.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/ripples.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/material.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/wow.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/jquery.mmenu.min.all.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/count-to.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/jquery.inview.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/classie.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/jquery.nav.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/smooth-scroll.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/form-validator.min.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/contact-form-script.js"></script>
+    <script src="//cdn.multiplug.app/js/mp/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+</body>
+</html>
                                 
                             </div>
                             <div class="navbar-right">
