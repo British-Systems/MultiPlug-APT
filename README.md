@@ -1,6 +1,6 @@
 Debian Package Repository for [MultiPlug .Net Edge Computing Platform](https://www.multiplug.app)
 
-# MultiPlug DEBIAN LINUX INSTALLATION
+# MultiPlug Debian Linux Installation
 ## Option 1 - Install with Repository Updates
 A Linux package repository is available for Debian-based Linux versions, this includes Raspberry Pi OS.
 
