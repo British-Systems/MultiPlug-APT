@@ -1,4 +1,4 @@
-Debian Package Repository for [MultiPlug .Net Edge Computing Platform](https://www.multiplug.app)
+Debian Package Repository for the [MultiPlug .Net Edge Computing Platform](https://www.multiplug.app)
 
 # MultiPlug Debian Linux Installation
 ## Option 1 - Install with Repository Updates
